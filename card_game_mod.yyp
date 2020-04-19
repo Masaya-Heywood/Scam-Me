@@ -55,6 +55,22 @@
             }
         },
         {
+            "Key": "11555569-69b0-4899-9a00-ed90994dd3c9",
+            "Value": {
+                "id": "a2dc4d4f-5929-4814-af19-e9ff4f108d8d",
+                "resourcePath": "objects\\obj_no_button\\obj_no_button.yy",
+                "resourceType": "GMObject"
+            }
+        },
+        {
+            "Key": "17625a84-9285-4108-b455-a0b64207dd8e",
+            "Value": {
+                "id": "90bf4528-904a-435a-a780-cedb83473484",
+                "resourcePath": "sounds\\snd_download\\snd_download.yy",
+                "resourceType": "GMSound"
+            }
+        },
+        {
             "Key": "1d3ee1ec-9a8c-43e2-ac92-ab8c5fa49e9e",
             "Value": {
                 "id": "af397f28-c461-4eb2-891b-87620d4d7998",
@@ -207,6 +223,22 @@
             }
         },
         {
+            "Key": "4c4e3d3d-c48e-41a8-baef-f70281917fec",
+            "Value": {
+                "id": "af36d682-8be5-4d15-8e77-5a5733d37b77",
+                "resourcePath": "sounds\\snd_intro\\snd_intro.yy",
+                "resourceType": "GMSound"
+            }
+        },
+        {
+            "Key": "4c8a57bc-698a-4ca5-943e-d46de91f4fc2",
+            "Value": {
+                "id": "fc49ae6f-8138-426c-b960-c8f060a6a9bf",
+                "resourcePath": "objects\\obj_yes_button\\obj_yes_button.yy",
+                "resourceType": "GMObject"
+            }
+        },
+        {
             "Key": "5fa970a4-1125-4414-a89f-e72f7cdd6c04",
             "Value": {
                 "id": "5a6c3ff7-ab81-42a9-8dbc-95dc01f83ef6",
@@ -244,6 +276,14 @@
                 "id": "a86e919d-0905-4066-a298-6f2e359d8fdc",
                 "resourcePath": "sprites\\spr_front_paper\\spr_front_paper.yy",
                 "resourceType": "GMSprite"
+            }
+        },
+        {
+            "Key": "6fdbf1b7-1f89-4335-9edb-c51c8445d15b",
+            "Value": {
+                "id": "90c7b223-5093-4a7c-ac39-ea74f63eb518",
+                "resourcePath": "objects\\obj_download_button1\\obj_download_button1.yy",
+                "resourceType": "GMObject"
             }
         },
         {
@@ -324,6 +364,14 @@
                 "id": "927e52aa-f287-4343-8b43-05decb01b317",
                 "resourcePath": "options\\tvos\\options_tvos.yy",
                 "resourceType": "GMtvOSOptions"
+            }
+        },
+        {
+            "Key": "93fd64e9-0f0b-4455-9541-b9b3c5e48270",
+            "Value": {
+                "id": "619dee0c-d373-4b18-aa81-9965aed28b6f",
+                "resourcePath": "objects\\obj_download_box\\obj_download_box.yy",
+                "resourceType": "GMObject"
             }
         },
         {
@@ -431,6 +479,14 @@
             }
         },
         {
+            "Key": "bc2f1eec-8b95-4a01-baa3-4d4005a3ff69",
+            "Value": {
+                "id": "12ffd31f-f0fa-4246-83d3-4db1c14a7beb",
+                "resourcePath": "objects\\obj_download_run\\obj_download_run.yy",
+                "resourceType": "GMObject"
+            }
+        },
+        {
             "Key": "bcc80d5a-2c94-46c0-8677-368c03a5054e",
             "Value": {
                 "id": "8ab1b0af-1835-4c4e-a5e8-48b0d0ddfa7a",
@@ -492,6 +548,14 @@
                 "id": "64cb2489-7922-4a7f-a9e1-79ccb81a4e24",
                 "resourcePath": "options\\android\\options_android.yy",
                 "resourceType": "GMAndroidOptions"
+            }
+        },
+        {
+            "Key": "e5332508-b66b-47f1-8c9b-73d63cf25f80",
+            "Value": {
+                "id": "1017fd88-7bb2-430b-87db-12bd8d199977",
+                "resourcePath": "sounds\\snd_click\\snd_click.yy",
+                "resourceType": "GMSound"
             }
         },
         {
