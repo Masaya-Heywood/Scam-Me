@@ -2,7 +2,7 @@
     "id": "86a69acf-fff7-4ce3-91cf-1daf686770c6",
     "modelName": "GMObject",
     "mvc": "1.0",
-    "name": "obj_player_card",
+    "name": "obj_player_card_parent",
     "eventList": [
         {
             "id": "d2b20d53-bab6-4fd2-80c5-7e1757101cc0",
@@ -22,16 +22,6 @@
             "collisionObjectId": "00000000-0000-0000-0000-000000000000",
             "enumb": 0,
             "eventtype": 3,
-            "m_owner": "86a69acf-fff7-4ce3-91cf-1daf686770c6"
-        },
-        {
-            "id": "071464c8-a3d3-4a78-aa25-d89e353008cb",
-            "modelName": "GMEvent",
-            "mvc": "1.0",
-            "IsDnD": false,
-            "collisionObjectId": "00000000-0000-0000-0000-000000000000",
-            "enumb": 0,
-            "eventtype": 0,
             "m_owner": "86a69acf-fff7-4ce3-91cf-1daf686770c6"
         }
     ],
