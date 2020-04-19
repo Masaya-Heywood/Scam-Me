@@ -3,4 +3,5 @@
 if (!position_meeting(mouse_x,mouse_y,self) && global.giftcardActive == true){
 	global.giftcardActive = false;
 	obj_giftcard.visible = false;
+	audio_stop_sound(snd_intro);
 }
