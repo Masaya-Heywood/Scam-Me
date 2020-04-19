@@ -11,6 +11,7 @@ global.computerDeck =  ds_list_create();
 global.playerDeck =  ds_list_create();
 global.discardDeck =  ds_list_create();
 
+
 //hands & cards variables
 global.numCards = 24;
 cardY = y;
