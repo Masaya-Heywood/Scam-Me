@@ -266,7 +266,7 @@
             "Key": "5a199546-b5c8-412f-9063-ad15be31e1dd",
             "Value": {
                 "id": "e1c17034-7af8-4c1e-b8b3-56bfe1e24e98",
-                "resourcePath": "rooms\\shift_room\\shift_room.yy",
+                "resourcePath": "rooms\\play_room\\play_room.yy",
                 "resourceType": "GMRoom"
             }
         },
@@ -380,6 +380,14 @@
                 "id": "7e5b027f-438c-45dc-80d6-06bf5dca6294",
                 "resourcePath": "options\\ios\\options_ios.yy",
                 "resourceType": "GMiOSOptions"
+            }
+        },
+        {
+            "Key": "86a69acf-fff7-4ce3-91cf-1daf686770c6",
+            "Value": {
+                "id": "6549144e-4fe9-40ca-9106-70772f8aea5d",
+                "resourcePath": "objects\\obj_player_card\\obj_player_card.yy",
+                "resourceType": "GMObject"
             }
         },
         {
