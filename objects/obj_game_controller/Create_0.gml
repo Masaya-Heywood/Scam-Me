@@ -8,6 +8,15 @@ persistent = true;
 global.playerDeckLocation = ds_list_create();
 global.handSize = 6
 global.cardCounter = 0;
+global.canSelect = false;
+global.selectedCard = 0;
+
+//states
+global.initialState = 1;
+global.setupState = 2;
+global.computerPlayState = 3;
+global.playerPlayState = 4;
+global.currentState = global.initialState;
 
 //
 global.cardReady = false;
@@ -18,12 +27,4 @@ previousCompDeckX = obj_player_slot.x;
 previousCompDeckY = obj_player_slot.y;
 
 
-for (i=0; i<global.handSize; i++) {
-	var deckHand = instance_create_layer(x,y,"Instances",obj_player_slot);
-	deckHand.x = previousCompDeckX;
-	deckHand.y = previousCompDeckY;
-	instance_create_layer(deckHand.x,deckHand.y+10,"Instances",obj_player_card)
-	previousCompDeckX += 150;
-	ds_list_add(global.playerDeckLocation, deckHand);
-}
 
