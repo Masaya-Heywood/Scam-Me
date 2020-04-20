@@ -5,4 +5,9 @@ if (position_meeting(mouse_x,mouse_y,self) && global.canSelect = true && empty =
 	heldCard = global.selectedCard;
 	heldCard.x = x;
 	heldCard.y = y;
+
+}
+
+if (heldCard = global.selectedCard && empty == false){
+	empty = true;
 }

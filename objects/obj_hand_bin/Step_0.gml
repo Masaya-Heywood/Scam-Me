@@ -3,3 +3,7 @@
 if (empty == true){
 	heldCard = 0;
 }
+
+if (global.reset == true){
+	sprite_index = spr_slots;
+}

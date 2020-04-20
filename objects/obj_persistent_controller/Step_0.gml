@@ -11,3 +11,9 @@ if (room = purchase_room){
 if (global.downloadActive == true && !audio_is_playing(snd_download)){
 	audio_play_sound(snd_download,2,false);
 }
+
+if(room = play_room){
+	if !audio_is_playing(snd_boss){
+		audio_play_sound(snd_boss,1,false)
+	}
+}
