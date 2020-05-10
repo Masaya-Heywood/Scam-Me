@@ -8,6 +8,7 @@ if (healthUse == true){
 
 if (healthRestore == true){
 	health = health + floor(random_range(0,2));
+	obj_player_special.holdoverDefense += 1;
 }
 
 if (sacrifice == true){
@@ -33,6 +34,11 @@ if (ddos == true){
 
 if (wipe == true){
 	obj_player_special.holdoverDefense -= 3;
+}
+
+if (manual == true){
+	obj_player_special.holdoverAttack += floor(random_range(1,2));
+	obj_player_special.holdoverDefense += floor(random_range(1,2));
 }
 
 if (undo == true){

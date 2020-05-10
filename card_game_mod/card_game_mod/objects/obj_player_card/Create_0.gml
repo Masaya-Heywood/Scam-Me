@@ -1,7 +1,7 @@
 /// @description Insert description here
 // You can write your code in this editor
 
-randomNum = floor(random_range(0,17));
+randomNum = floor(random_range(0,18));
 
 attackValue = 0;
 defenseValue = 0;
@@ -17,6 +17,7 @@ ddos = false;
 wipe = false;
 undo = false;
 VPN = false;
+manual = true;
 healthBonus = 10;
 depth = 20
 
@@ -68,9 +69,9 @@ if (randomNum == 0){
 	healthRestore = true;
 } else if (randomNum == 8){
 	sprite_index = spr_back;
-	toolPhrase = "'Tech Support' Atk: 4 + Random (1 to 6) | Def: 4 + Random (1 to 6). \n Subtracts health 7 health on use. \n A lot of help for the steep price of \n annoying social interactions.";
-	attackValue = floor(random_range(1,6)) + 4;
-	defenseValue = floor(random_range(1,6)) + 4;
+	toolPhrase = "'Tech Support' Atk: 5 + Random (1 to 6) | Def: 5 + Random (1 to 6). \n Subtracts health 7 health on use. \n A lot of help for the steep price of \n annoying social interactions.";
+	attackValue = floor(random_range(1,6)) + 5;
+	defenseValue = floor(random_range(1,6)) + 5;
 	sacrifice = true;
 } else if (randomNum == 9){
 	sprite_index = spr_back;
@@ -110,14 +111,20 @@ if (randomNum == 0){
 	ddos = true;
 } else if (randomNum == 15){
 	sprite_index = spr_back;
-	toolPhrase = "'Deep Scan & Wipe' Atk: 0 | Def: 0 + Random (7 - 20) \n On use: -3 Base Defense \n Get that yucky stuff off your computer for once and for all.";
+	toolPhrase = "'Deep Scan & Wipe' Atk: 0 | Def: 10 + Random (7 - 20) \n On use: -3 Base Defense \n Get that yucky stuff off your computer for once and for all.";
 	attackValue = 0;
 	defenseValue = 10 + floor(random_range(7,20));
 	wipe = true;
 } else if (randomNum == 16){
 	sprite_index = spr_back;
-	toolPhrase = "'Undo' Atk: 0 | Def: 0 \n On use: Clears the other slots. \n Removes given stats but not 'On use' benefits. \n Title.";
+	toolPhrase = "'Undo' Atk: 0 | Def: 0 \n On use: Clears the other slots. \n Removes given stats but not 'On use' benefits. \n Refer to title.";
 	attackValue = 0;
 	defenseValue = 0;
 	undo = true;
+}  else if (randomNum == 17){
+	sprite_index = spr_back;
+	toolPhrase = "'Operational Security Manual' Atk: 0 | Def: 0 \n On use: Gives +1 to 2 Base Attack and Defense\n 'The biggest gap in security is you.'";
+	attackValue = 0;
+	defenseValue = 0;
+	manual = true;
 }
