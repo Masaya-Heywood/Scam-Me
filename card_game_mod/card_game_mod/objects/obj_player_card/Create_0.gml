@@ -1,7 +1,7 @@
 /// @description Insert description here
 // You can write your code in this editor
 
-randomNum = floor(random_range(0,12));
+randomNum = floor(random_range(0,17));
 
 attackValue = 0;
 defenseValue = 0;
@@ -11,8 +11,13 @@ healthUse = false;
 sacrifice = false;
 endRound = false;
 restore = false;
+trojan = false;
+reformat = false;
+ddos = false;
+wipe = false;
+undo = false;
+VPN = false;
 healthBonus = 10;
-global.usbCount = 2;
 depth = 20
 
 if (randomNum == 0){
@@ -33,14 +38,14 @@ if (randomNum == 0){
 } else if (randomNum == 3){
 	sprite_index = spr_card_sniffer;
 	toolPhrase = "'Packet Sniffer' Atk: -5 | Def: 15. \n A basic sniffer that \n records helpful information in \n cyberdefense.";
-	attackValue = 5;
-	defenseValue = -5;
+	attackValue = -5;
+	defenseValue = 15;
 	
 } else if (randomNum == 4){
 	sprite_index = spr_card_scanner;
 	toolPhrase = "'Port Scanner' Atk: 15 | Def: -5. \n Any a port in a cyberstorm!";
-	attackValue = 1;
-	defenseValue = 1;
+	attackValue = 15;
+	defenseValue = -5;
 	
 } else if (randomNum == 5){
 	sprite_index = spr_card_hard;
@@ -51,19 +56,19 @@ if (randomNum == 0){
 	
 } else if (randomNum == 6){
 	sprite_index = spr_card_regedit;
-	toolPhrase = "'RegEdit' Atk: Random | Def: Random. \n (Can Subtract) \n There's a reason why \n it gives five warnings \n before you edit.";
-	attackValue = floor(random_range(-5,15));
-	defenseValue = floor(random_range(-5,15));
+	toolPhrase = "'RegEdit' Atk: Random (-5 to 18) | Def: Random (-5 to 18). \n There's a reason why \n it gives five warnings \n before you edit.";
+	attackValue = floor(random_range(-5,18));
+	defenseValue = floor(random_range(-5,18));
 	
 } else if (randomNum == 7){
 	sprite_index = spr_card_usb;
-	toolPhrase = "'Back Up USB' Atk: -2 | Def: -2 \n On use: + 2 to 7 Health \n Better than floppy disks. \n Not as fun of a name though.";
-	attackValue = -2;
-	defenseValue = -2;
+	toolPhrase = "'Back Up USB' Atk: 0 to 2| Def: 1 to 3\n On use: + 2 to 4 Health, +1 Base Defense\n Better than floppy disks. \n Not as fun of a name though.";
+	attackValue = 1 + floor(random_range(0,2));
+	defenseValue = 1 + + floor(random_range(1,3));
 	healthRestore = true;
 } else if (randomNum == 8){
 	sprite_index = spr_back;
-	toolPhrase = "'Tech Support' Atk: 4 + Random | Def: 4 + Random. \n Subtracts health 7 health on use. \n A lot of help for the steep price of \n annoying social interactions.";
+	toolPhrase = "'Tech Support' Atk: 4 + Random (1 to 6) | Def: 4 + Random (1 to 6). \n Subtracts health 7 health on use. \n A lot of help for the steep price of \n annoying social interactions.";
 	attackValue = floor(random_range(1,6)) + 4;
 	defenseValue = floor(random_range(1,6)) + 4;
 	sacrifice = true;
@@ -75,14 +80,44 @@ if (randomNum == 0){
 	endRound = true;
 } else if (randomNum == 10){
 	sprite_index = spr_back;
-	toolPhrase = "'System Restore' Atk: 0 | Def: 0 \n On use: +25 Health, +10 Health for Enemy \n Can't hack a computer that's off. \n Granted, you can't remove a virus off one either.";
-	attackValue = -15;
-	defenseValue = 25;
+	toolPhrase = "'System Restore' Atk: 0 | Def: 0 \n On use: +25 Health, +8 Health for Enemy \n Can't hack a computer that's off. \n Granted, you can't remove a virus off one either.";
+	attackValue = 0;
+	defenseValue = 0;
 	restore = true;
 } else if (randomNum == 11){
 	sprite_index = spr_back;
-	toolPhrase = "'Reformat' Atk: 2 | Def: -2 \n On use: -4 Health, -8 Health for Enemy \n Can't hack a computer that's off. \n Granted, you can't remove a virus off one either.";
-	attackValue = -15;
-	defenseValue = 25;
-	restore = true;
+	toolPhrase = "'Reformat' Atk: 4 | Def: -2 \n On use: -3 Health, -8 Health for Enemy \n Can't hack a computer that's off. \n Granted, you can't remove a virus off one either.";
+	attackValue = 4;
+	defenseValue = -2;
+	reformat = true;
+} else if (randomNum == 12){
+	sprite_index = spr_back;
+	toolPhrase = "'VPN' Atk: 0 | Def: 10 \n On use: +1 Base Defense \n It's like wearing a mask online!";
+	attackValue = 0;
+	defenseValue = 10;
+	VPN = true;
+} else if (randomNum == 13){
+	sprite_index = spr_back;
+	toolPhrase = "'Counter Trojan' Atk: 10 | Def: 0 \n On use: +1 Base Attack \n No one knows where you go this from!";
+	attackValue = 10;
+	defenseValue = 0;
+	trojan = true;
+} else if (randomNum == 14){
+	sprite_index = spr_back;
+	toolPhrase = "'DDoS' Atk: 10 + Random (7 - 20) | Def: 0 \n On use: -3 Base Attack \n Join the dark side. Unleash your hacker skills.";
+	attackValue = 10 + floor(random_range(7,20));
+	defenseValue = 0;
+	ddos = true;
+} else if (randomNum == 15){
+	sprite_index = spr_back;
+	toolPhrase = "'Deep Scan & Wipe' Atk: 0 | Def: 0 + Random (7 - 20) \n On use: -3 Base Defense \n Get that yucky stuff off your computer for once and for all.";
+	attackValue = 0;
+	defenseValue = 10 + floor(random_range(7,20));
+	wipe = true;
+} else if (randomNum == 16){
+	sprite_index = spr_back;
+	toolPhrase = "'Undo' Atk: 0 | Def: 0 \n On use: Clears the other slots. \n Removes given stats but not 'On use' benefits. \n Title.";
+	attackValue = 0;
+	defenseValue = 0;
+	undo = true;
 }

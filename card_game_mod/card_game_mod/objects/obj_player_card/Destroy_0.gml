@@ -1,15 +1,6 @@
 /// @description Insert description here
 // You can write your code in this editor
 global.selectedCard = obj_dummy_card;
-global.usbCount += 2;
-
-if (healthRestore == true){
-	health = health + floor(random_range(0,5));
-}
-
-if (sacrifice == true){
-	health = health - 7;
-}
 
 if (endRound == true){
 	if (position_meeting(mouse_x,mouse_y,self) && global.currentState = global.playerPlayState){
@@ -66,9 +57,4 @@ if (endRound == true){
 	}
 
 	global.reset = false;
-}
-
-if (restore == true){
-	health = health - 25;
-	obj_computer.computerHealth += 10;
 }
