@@ -7,6 +7,7 @@ switch(global.currentState){
 	case global.computerPlayState:
 	randomNum = floor(random_range(0,4));	
 	
+	
 	if (randomNum == modeAggresive){
 		sprite_index = spr_virus_normal;
 		toolPhrase = "The scambot is angry! \n He's more likely to try to inflict damage \n than defend against it.";
@@ -17,7 +18,7 @@ switch(global.currentState){
 		modeReveal = "Aggresive";
 	} else if (randomNum == modeDefensive){
 		sprite_index = spr_virus_defense;
-		toolPhrase = "The scambot is being cautious. \n He's trying not to take damage.";
+		toolPhrase = "The scambot is being cautious. \n He's trying to not take damage.";
 		attackDamage = floor(random_range(5,10))
 		attackReveal = "~" + string(random_range(attackDamage - revealCap,attackDamage + revealCap));
 		defense = floor(random_range(10,20))
