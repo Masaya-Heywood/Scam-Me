@@ -1,7 +1,7 @@
 /// @description Insert description here
 // You can write your code in this editor
 if (position_meeting(mouse_x,mouse_y,self) && global.currentState = global.playerPlayState){
-	calculatedAttack = obj_attack_add.playerAttack - obj_computer.defense;
+	calculatedAttack = obj_attack_add.playerAttack + 10 - obj_computer.defense;
 	calculatedDefense = obj_computer.attackDamage - obj_defense_add.playerDefense
 	
 	if (calculatedAttack <= 0){
@@ -18,7 +18,8 @@ if (position_meeting(mouse_x,mouse_y,self) && global.currentState = global.playe
 	}
 
 	randomNum = floor(random_range(0,7));
-	
+
+if (room == play_room){
 	if (randomNum == 0){
 		audio_group_stop_all(audioTalk);
 		audio_play_sound(snd_give_up ,1, false);
@@ -44,7 +45,48 @@ if (position_meeting(mouse_x,mouse_y,self) && global.currentState = global.playe
 		audio_group_stop_all(audioTalk);
 		audio_play_sound(snd_esc,1, false);
 	}
-
+	
+} else if (room == play_room_minion){
+	randomNum = floor(random_range(0,7));
+	
+	if (randomNum == 0){
+		audio_group_stop_all(audioTalkMinion);
+		audio_play_sound(snd_calm ,1, false);
+	} else if (randomNum == 1){
+		audio_group_stop_all(audioTalkMinion);
+		audio_play_sound(snd_carl ,1, false);
+	} else if (randomNum == 2){
+		audio_group_stop_all(audioTalkMinion);
+		audio_play_sound(snd_comp ,1, false);
+	} else if (randomNum == 3){
+		audio_group_stop_all(audioTalkMinion);
+		audio_play_sound(snd_penny ,1, false);
+	} else if (randomNum == 4){
+		audio_group_stop_all(audioTalkMinion);
+		audio_play_sound(snd_diplo ,1, false);
+	} else if (randomNum == 5){
+		audio_group_stop_all(audioTalkMinion);
+		audio_play_sound(snd_dirty,1, false);
+	} else if (randomNum == 6){
+		audio_group_stop_all(audioTalkMinion);
+		audio_play_sound(snd_jack,1, false);
+	} else if (randomNum == 7){
+		audio_group_stop_all(audioTalkMinion);
+		audio_play_sound(snd_oscar,1, false);
+	} else if (randomNum == 7){
+		audio_group_stop_all(audioTalkMinion);
+		audio_play_sound(snd_res,1, false);
+	}  else if (randomNum == 7){
+		audio_group_stop_all(audioTalkMinion);
+		audio_play_sound(snd_hard,1, false);
+	}  else if (randomNum == 7){
+		audio_group_stop_all(audioTalkMinion);
+		audio_play_sound(snd_samantha,1, false);
+	}  else if (randomNum == 7){
+		audio_group_stop_all(audioTalkMinion);
+		audio_play_sound(snd_steve,1, false);
+	}
+}
 
 	 global.currentState = global.finishState
 }

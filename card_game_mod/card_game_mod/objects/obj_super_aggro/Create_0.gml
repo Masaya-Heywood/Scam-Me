@@ -7,10 +7,11 @@ event_inherited();
 if (room == play_room){
 	attackPhrase = "Special Attack: Lucky Break \n Evey scammer is waiting for the perfect moment. \n Lost 3 health at start of round.";
 	health -= 3;
-} else if (0 != 0){
-	attackPhrase = "Special Attack: Web of Lies \n Keeping you confused with nonsensical scams. \n -1 to your Base Defense";
-} else if (0 != 0){
+} else if (room == play_room_minion){
+	attackPhrase = "Special Attack: Frenzy \n TOO MANY BOTS \n Dealing +2 damage.";
+	obj_computer.attackDamage += 2;
+} else if (room == play_room_sister){
 	attackPhrase = "Special Attack: Lucky Break \n Evey scammer is waiting for the perfect moment. \n Lost 2 health at start of round.";
-} else if (0 != 0){
+} else if (room == play_room_final){
 	attackPhrase = "Special Attack: Lucky Break \n Evey scammer is waiting for the perfect moment. \n Lost 2 health at start of round.";
 }

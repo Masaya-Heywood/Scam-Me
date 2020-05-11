@@ -12,7 +12,7 @@ defenseModifer = 0;
 attackReveal = "";
 defenseReveal = "";
 revealCap = 7;
-
+bossRoom = room;
 modeAggresive = 0;
 modeDefensive = 1;
 modeVeryAggresive = 2;
@@ -24,8 +24,7 @@ toolPhrase = "";
 draw_sprite(spr_sword,1,x - 40,y);
 draw_sprite(spr_shield,1,x + 40,y);
 
-attackPhrase = "You shouldn't see this";
-randomAbilityNum = floor(random_range(0,4));
+randomAbilityNum = floor(random_range(0,8));
 if (randomAbilityNum == modeAggresive){
 	instance_create_depth(obj_ability_placeholder.x, obj_ability_placeholder.y, 1, obj_aggro)
 } else if (randomAbilityNum == modeDefensive){
@@ -34,6 +33,18 @@ if (randomAbilityNum == modeAggresive){
 	instance_create_depth(obj_ability_placeholder.x, obj_ability_placeholder.y, 1, obj_super_aggro)
 } else if (randomAbilityNum == modeVeryDefensive){
 	instance_create_depth(obj_ability_placeholder.x, obj_ability_placeholder.y, 1, obj_super_def)
+} else if (randomAbilityNum == 5 || 6 || 7){
+	instance_create_depth(obj_ability_placeholder.x, obj_ability_placeholder.y, 1, obj_neutral)
 }
 
-instance_create_depth(obj_passive_placeholder.x, obj_passive_placeholder.y, 1, obj_passive_scambot);
+if (bossRoom == play_room){
+	instance_create_depth(obj_passive_placeholder.x, obj_passive_placeholder.y, 1, obj_passive_scambot);
+} else if (bossRoom == play_room_minion){
+	instance_create_depth(obj_passive_placeholder.x, obj_passive_placeholder.y, 1, obj_passive_minion);	
+	sprite_index = spr_minion
+	computerHealth = 250;
+} else if (bossRoom == play_room_sister){
+	instance_create_depth(obj_passive_placeholder.x, obj_passive_placeholder.y, 1, obj_passive_sister);
+} else if (bossRoom == play_room_final){
+	instance_create_depth(obj_passive_placeholder.x, obj_passive_placeholder.y, 1, obj_passive_finalbot);
+}

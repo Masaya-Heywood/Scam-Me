@@ -1,5 +1,6 @@
 randomize();
 audio_group_load(audioTalk);
+audio_group_load(audioTalkMinion);
 
 //only put variables here
 

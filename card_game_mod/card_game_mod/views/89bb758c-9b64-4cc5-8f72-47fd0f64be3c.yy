@@ -1,0 +1,27 @@
+{
+    "id": "89bb758c-9b64-4cc5-8f72-47fd0f64be3c",
+    "modelName": "GMFolder",
+    "mvc": "1.1",
+    "name": "89bb758c-9b64-4cc5-8f72-47fd0f64be3c",
+    "children": [
+        "4c4e3d3d-c48e-41a8-baef-f70281917fec",
+        "17625a84-9285-4108-b455-a0b64207dd8e",
+        "996a2f8f-faf1-48f2-87a7-c973569adae0",
+        "814232c2-af7d-4fea-a867-ac82a0af0755",
+        "6d4b0a4c-0bf1-4256-a382-9a049c23a673",
+        "7aaa4ec9-0ebe-483f-bc60-7de249d3cf0b",
+        "14668a37-3a99-48b8-a27f-c03d7fe51aa8",
+        "b790e575-1704-4f4c-ad08-7abfad2b57ee",
+        "1f761e8d-64e6-4eeb-abf0-1b0aa2fa882a",
+        "c8082dc9-fab9-4950-a655-ddc847831bfb",
+        "eabb8db0-8507-48cc-b59a-3724398098c2",
+        "6426e20a-d737-41a3-b5a8-0c71a1816bd2",
+        "1036e5a1-7462-48ec-92b7-c7f7b2c5c292",
+        "9ab4c6fb-749d-42af-a780-c5a50460fd74",
+        "ade1d06e-17ba-4d6e-8fba-7e3260e4d6d7"
+    ],
+    "filterType": "GMSound",
+    "folderName": "group_first_sound",
+    "isDefaultView": false,
+    "localisedFolderName": ""
+}
