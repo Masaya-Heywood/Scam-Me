@@ -68,61 +68,61 @@ if (randomNum == 0){
 	defenseValue = 1 + + floor(random_range(1,3));
 	healthRestore = true;
 } else if (randomNum == 8){
-	sprite_index = spr_back;
+	sprite_index = spr_card_support;
 	toolPhrase = "'Tech Support' Atk: 5 + Random (1 to 6) | Def: 5 + Random (1 to 6). \n Subtracts health 7 health on use. \n A lot of help for the steep price of \n annoying social interactions.";
 	attackValue = floor(random_range(1,6)) + 5;
 	defenseValue = floor(random_range(1,6)) + 5;
 	sacrifice = true;
 } else if (randomNum == 9){
-	sprite_index = spr_back;
+	sprite_index = spr_card_reboot;
 	toolPhrase = "'Reboot' Atk: -15 | Def: 25 \n On use: End the round. \n Can't hack a computer that's off. \n Granted, you can't remove a virus off one either.";
 	attackValue = -15;
 	defenseValue = 25;
 	endRound = true;
 } else if (randomNum == 10){
-	sprite_index = spr_back;
+	sprite_index = spr_card_restore;
 	toolPhrase = "'System Restore' Atk: 0 | Def: 0 \n On use: +25 Health, +8 Health for Enemy \n Can't hack a computer that's off. \n Granted, you can't remove a virus off one either.";
 	attackValue = 0;
 	defenseValue = 0;
 	restore = true;
 } else if (randomNum == 11){
-	sprite_index = spr_back;
+	sprite_index = spr_card_reformat;
 	toolPhrase = "'Reformat' Atk: 4 | Def: -2 \n On use: -3 Health, -8 Health for Enemy \n Can't hack a computer that's off. \n Granted, you can't remove a virus off one either.";
 	attackValue = 4;
 	defenseValue = -2;
 	reformat = true;
 } else if (randomNum == 12){
-	sprite_index = spr_back;
+	sprite_index = spr_card_vpn;
 	toolPhrase = "'VPN' Atk: 0 | Def: 10 \n On use: +1 Base Defense \n It's like wearing a mask online!";
 	attackValue = 0;
 	defenseValue = 10;
 	VPN = true;
 } else if (randomNum == 13){
-	sprite_index = spr_back;
+	sprite_index = spr_card_trojan;
 	toolPhrase = "'Counter Trojan' Atk: 10 | Def: 0 \n On use: +1 Base Attack \n No one knows where you go this from!";
 	attackValue = 10;
 	defenseValue = 0;
 	trojan = true;
 } else if (randomNum == 14){
-	sprite_index = spr_back;
+	sprite_index = spr_card_ddos;
 	toolPhrase = "'DDoS' Atk: 10 + Random (7 - 20) | Def: 0 \n On use: -3 Base Attack \n Join the dark side. Unleash your hacker skills.";
 	attackValue = 10 + floor(random_range(7,20));
 	defenseValue = 0;
 	ddos = true;
 } else if (randomNum == 15){
-	sprite_index = spr_back;
+	sprite_index = spr_card_wipe;
 	toolPhrase = "'Deep Scan & Wipe' Atk: 0 | Def: 10 + Random (7 - 20) \n On use: -3 Base Defense \n Get that yucky stuff off your computer for once and for all.";
 	attackValue = 0;
 	defenseValue = 10 + floor(random_range(7,20));
 	wipe = true;
 } else if (randomNum == 16){
-	sprite_index = spr_back;
+	sprite_index = spr_card_undo;
 	toolPhrase = "'Undo' Atk: 0 | Def: 0 \n On use: Clears the other slots. \n Removes given stats but not 'On use' benefits. \n Refer to title.";
 	attackValue = 0;
 	defenseValue = 0;
 	undo = true;
 }  else if (randomNum == 17){
-	sprite_index = spr_back;
+	sprite_index = spr_card_manual;
 	toolPhrase = "'Operational Security Manual' Atk: 0 | Def: 0 \n On use: Gives +1 to 2 Base Attack and Defense\n 'The biggest gap in security is you.'";
 	attackValue = 0;
 	defenseValue = 0;

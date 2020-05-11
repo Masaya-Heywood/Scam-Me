@@ -8,3 +8,4 @@ persistent = true
 
 holdoverDefense = 0;
 holdoverAttack = 0;
+toolPhrase = "You shouldn't see this"
